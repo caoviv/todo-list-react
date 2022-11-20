@@ -50,7 +50,7 @@ function App() {
 
   const handleClick = (e) => {
     e.preventDefault();
-     handleToggle(e.currentTarget.id); 
+    handleToggle(e.currentTarget.id);
   };
 
   return (
@@ -88,10 +88,10 @@ function App() {
                     </strike>
                   ) : (
                     <Checkbox
-                    label={task.taskDescription}
-                    value={task.id}
-                    checked={task.isCompleted}
-                    onChange={(event)  => handleToggle(task.id)}
+                      label={task.taskDescription}
+                      value={task.id}
+                      checked={task.isCompleted}
+                      onChange={(event) => handleClick(task.id)}
                     />
                   )}
                 </div>
